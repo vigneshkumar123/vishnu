@@ -33,3 +33,4 @@ pipelines:
                     arguments:
                       - -c
                       - echo "Heyy Hii "
+                    command: /bin/bash
