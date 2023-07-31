@@ -15,6 +15,12 @@ pipelines:
         shallow_clone: false
         auto_update: true
         branch: master
+    triggers:
+      - material_update:
+          pipeline: cds
+          material: cds-integration
+          event: push
+
     stages:
       - cds-integration:
           fetch_materials: true
@@ -34,3 +40,4 @@ pipelines:
                       - -c
                       - echo "Heyy Hii "
                     command: /bin/bash
+     
