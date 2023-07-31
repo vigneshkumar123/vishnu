@@ -28,3 +28,8 @@ pipelines:
               timeout: 0
               resources:
                 - gocd
+              tasks:
+                - exec:
+                    arguments:
+                      - -c
+                      - echo "Heyy Hii "
